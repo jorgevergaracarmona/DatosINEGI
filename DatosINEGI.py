@@ -14,7 +14,7 @@ import streamlit as st
 
 CARPETA_RAIZ = Path(__file__).resolve().parents[1]
 
-DIRECTORIO = CARPETA_RAIZ / "Datos/Datos"
+DIRECTORIO = CARPETA_RAIZ / "Datos" / "Datos" / "ModeloDatos" 
 
 CATALOGOS = DIRECTORIO / "catalogos"
 DICCIONARIO = DIRECTORIO / "diccionario_de_datos"
