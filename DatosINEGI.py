@@ -14,18 +14,19 @@ import streamlit as st
 
 # 1. Para importar desde un archivo CSV
 # df_cat_entidades = catálogo de entidades federativas
-df_cat_entidades = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/cve_ent.csv')
+#df_cat_entidades = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/cve_ent.csv')
+df_cat_entidades = pd.read_csv('../Datos/Datos/ModeloDatos/catalogos/cve_ent.csv')
 #df_cat_entidades = pd.read_csv('/Datos/Datos/ModeloDatos/catalogos/cve_ent.csv')
 # df_cat_tam_pob = catálogo de tamaño de población de acuerdo al número de habitantes.
-df_cat_tam_pob = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/menor10.csv')
+df_cat_tam_pob = pd.read_csv('../Datos/Datos/ModeloDatos/catalogos/menor10.csv')
 # df_cat_respuesta = catálogo de pregunta si-no.
-df_cat_respuesta = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/p2_4_01.csv')
+df_cat_respuesta = pd.read_csv('../Datos/Datos/ModeloDatos/catalogos/p2_4_01.csv')
 # df_cat_respuesta_1 = catálogo de pregunta si-no-nosabe.
-df_cat_respuesta_1 = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/p3_14_1.csv')
+df_cat_respuesta_1 = pd.read_csv('../Datos/Datos/ModeloDatos/catalogos/p3_14_1.csv')
 # df_cat_preguntas = catálogo de preguntas completas.
-df_cat_preguntas = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/diccionario_de_datos/diccionario_datos_enut_2024_thogar.csv')
+df_cat_preguntas = pd.read_csv('../Datos/Datos/ModeloDatos/diccionario_de_datos/diccionario_datos_enut_2024_thogar.csv')
 # df_tabla_hogar = Tabla que contiene información relacionada con el hoghar .
-df_tabla_hogar = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/conjunto_de_datos/conjunto_de_datos_enut_2024_thogar.csv')
+df_tabla_hogar = pd.read_csv('../Datos/Datos/ModeloDatos/conjunto_de_datos/conjunto_de_datos_enut_2024_thogar.csv')
 
 
 
