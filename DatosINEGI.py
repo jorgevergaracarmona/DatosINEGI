@@ -29,7 +29,7 @@ def carga_df():
     
     df_cat_preguntas = pd.read_csv(DICCIONARIO / "diccionario_datos_enut_2024_thogar.csv")
 
-    df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv)
+    df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv")
     
     )
 
