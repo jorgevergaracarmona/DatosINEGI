@@ -22,16 +22,16 @@ CONJUNTO_DATOS = DIRECTORIO / "conjunto_de_datos"
 
 @st.cache_data
 #def carga_df():
-    """Carga la informacion en dataframes para la app."""
+#Carga la informacion en dataframes para la app."""
 
-    df_cat_entidades = pd.read_csv(CATALOGOS / "cve_ent.csv")
-    df_cat_tam_pob = pd.read_csv(CATALOGOS / "menor10.csv")
-    df_cat_respuesta = pd.read_csv(CATALOGOS / "p2_4_01.csv")
-    df_cat_respuesta_1 = pd.read_csv(CATALOGOS / "p3_14_1.csv")
+df_cat_entidades = pd.read_csv(CATALOGOS / "cve_ent.csv")
+df_cat_tam_pob = pd.read_csv(CATALOGOS / "menor10.csv")
+df_cat_respuesta = pd.read_csv(CATALOGOS / "p2_4_01.csv")
+df_cat_respuesta_1 = pd.read_csv(CATALOGOS / "p3_14_1.csv")
     
-    df_cat_preguntas = pd.read_csv(DICCIONARIO / "diccionario_datos_enut_2024_thogar.csv")
+df_cat_preguntas = pd.read_csv(DICCIONARIO / "diccionario_datos_enut_2024_thogar.csv")
 
-    df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv")
+df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv")
     
 #    )
 
