@@ -8,7 +8,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
-import snowflake.connector
+#import snowflake.connector
 #import streamlit_option_menu
 #from streamlit_option_menu import option_menu
 
