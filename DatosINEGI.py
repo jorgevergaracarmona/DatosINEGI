@@ -21,7 +21,7 @@ DICCIONARIO = DIRECTORIO / "diccionario_de_datos"
 CONJUNTO_DATOS = DIRECTORIO / "conjunto_de_datos"
 
 @st.cache_data
-def carga_df():
+#def carga_df():
     """Carga la informacion en dataframes para la app."""
 
     df_cat_entidades = pd.read_csv(CATALOGOS / "cve_ent.csv")
@@ -33,7 +33,7 @@ def carga_df():
 
     df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv")
     
-    )
+#    )
 
 """
 # 1. Para importar desde un archivo CSV
@@ -53,7 +53,7 @@ df_cat_preguntas = pd.read_csv('../Datos/Datos/ModeloDatos/diccionario_de_datos/
 df_tabla_hogar = pd.read_csv('../Datos/Datos/ModeloDatos/conjunto_de_datos/conjunto_de_datos_enut_2024_thogar.csv')
 """
 
-carga_df()
+#carga_df()
 
 
 # In[9]:
