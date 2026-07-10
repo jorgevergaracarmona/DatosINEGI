@@ -14,9 +14,11 @@ import streamlit as st
 
 CARPETA_RAIZ = Path(__file__).resolve().parents[1]
 
-CATALOGOS = CARPETA_RAIZ / "catalogos"
-DICCIONARIO = CARPETA_RAIZ / "diccionario_de_datos"
-CONJUNTO_DATOS = CARPETA_RAIZ / "conjunto_de_datos"
+DIRECTORIO = CARPETA_RAIZ / "Datos/Datos"
+
+CATALOGOS = DIRECTORIO / "catalogos"
+DICCIONARIO = DIRECTORIO / "diccionario_de_datos"
+CONJUNTO_DATOS = DIRECTORIO / "conjunto_de_datos"
 
 @st.cache_data
 def carga_df():
