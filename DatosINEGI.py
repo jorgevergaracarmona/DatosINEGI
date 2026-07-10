@@ -12,6 +12,28 @@ import streamlit as st
 #import streamlit_option_menu
 #from streamlit_option_menu import option_menu
 
+CARPETA_RAIZ = Path(__file__).resolve().parents[1]
+
+CATALOGOS = CARPETA_RAIZ / "catalogos"
+DICCIONARIO = CARPETA_RAIZ / "diccionario_de_datos"
+CONJUNTO_DATOS = CARPETA_RAIZ / "conjunto_de_datos"
+
+@st.cache_data
+def carga_df():
+    """Carga la informacion en dataframes para la app."""
+
+    df_cat_entidades = pd.read_csv(CATALOGOS / "cve_ent.csv")
+    df_cat_tam_pob = pd.read_csv(CATALOGOS / "menor10.csv")
+    df_cat_respuesta = pd.read_csv(CATALOGOS / "p2_4_01.csv")
+    df_cat_respuesta_1 = pd.read_csv(CATALOGOS / "p3_14_1.csv")
+    
+    df_cat_preguntas = pd.read_csv(DICCIONARIO / "diccionario_datos_enut_2024_thogar.csv")
+
+    df_tabla_hogar = pd.read_csv(REFERENCE_DIR / "conjunto_de_datos_enut_2024_thogar.csv)
+    
+    )
+
+"""
 # 1. Para importar desde un archivo CSV
 # df_cat_entidades = catálogo de entidades federativas
 #df_cat_entidades = pd.read_csv('/Users/jorge/anaconda_projects/920a073c-2d0c-407c-9b32-c8476685090b/Datos/Datos/ModeloDatos/catalogos/cve_ent.csv')
@@ -27,9 +49,9 @@ df_cat_respuesta_1 = pd.read_csv('../Datos/Datos/ModeloDatos/catalogos/p3_14_1.c
 df_cat_preguntas = pd.read_csv('../Datos/Datos/ModeloDatos/diccionario_de_datos/diccionario_datos_enut_2024_thogar.csv')
 # df_tabla_hogar = Tabla que contiene información relacionada con el hoghar .
 df_tabla_hogar = pd.read_csv('../Datos/Datos/ModeloDatos/conjunto_de_datos/conjunto_de_datos_enut_2024_thogar.csv')
+"""
 
-
-
+carga_df()
 
 
 # In[9]:
