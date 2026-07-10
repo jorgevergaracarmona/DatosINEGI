@@ -12,7 +12,7 @@ import streamlit as st
 #import streamlit_option_menu
 #from streamlit_option_menu import option_menu
 
-CARPETA_RAIZ = Path(__file__).resolve().parents[1]
+CARPETA_RAIZ = Path(__file__).resolve().parents[0]
 
 DIRECTORIO = CARPETA_RAIZ / "Datos" / "Datos" / "ModeloDatos" 
 
